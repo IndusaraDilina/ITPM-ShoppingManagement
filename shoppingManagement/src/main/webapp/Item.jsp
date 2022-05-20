@@ -14,9 +14,9 @@
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
-	<link rel="stylesheet" href="style.css">
-	
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -41,17 +41,19 @@
 				<li class="nav-item active"><a class="nav-link"
 					href="AdminHome.jsp">Home <span class="sr-only">(current)</span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="ItemHome.jsp">Go back</a></li>
+				<li class="nav-item"><a class="nav-link" href="ItemHome.jsp">Go
+						back</a></li>
 			</ul>
 		</div>
 	</nav>
 
-	<div class="container" style="margin-top: 60px;margin-bottom: 60px;">
+	<div class="container" style="margin-top: 60px; margin-bottom: 60px;">
 
 		<div class="card">
 			<div class="row">
 				<aside class="col-sm-4">
-					<a href="#"><img style=" width: 370px;" src="https://i.imgur.com/QpjAiHq.jpg"></a>
+					<a href="#"><img style="width: 370px;"
+						src="https://i.imgur.com/QpjAiHq.jpg"></a>
 				</aside>
 
 				<%
@@ -86,7 +88,8 @@
 							<dd><%=rs.getString("quantity")%></dd>
 						</dl>
 						<hr>
-						<a href="/PaymentManagement/Payment-form.jsp" class="btn btn-primary text-uppercase"> Buy now </a>
+						<a href="/PaymentManagement/Payment-form.jsp"
+							class="btn btn-primary text-uppercase"> Buy now </a>
 					</article>
 				</aside>
 
@@ -98,46 +101,48 @@
 			</div>
 		</div>
 	</div>
-	
-			  <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>Sitesoch</h4>
-  	 			<ul>
-  	 				<li><a href="#">Home</a></li>
-  	 				<li><a href="#">About</a></li>
-  	 				<li><a href="#">Pricing</a></li>
-  	 				<li><a href="#">Privacy Policy</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Get Help</h4>
-  	 			<ul>
-  	 				<li><a href="#">Shipping</a></li>
-  	 				<li><a href="#">Returns</a></li>
-  	 				<li><a href="#">Order Status</a></li>
-  	 				<li><a href="#">Payment Options</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Address</h4>
-  	 			<ul>
-  	 				<li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci quia ab omnis id ipsum quae inventore </a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-google"></i></a>
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
-	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Sitesoch</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Get Help</h4>
+					<ul>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Payment Options</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Address</h4>
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Cupiditate adipisci quia ab omnis id ipsum
+								quae inventore </a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-google"></i></a> <a href="#"><i
+							class="fab fa-facebook-f"></i></a> <a href="#"><i
+							class="fab fa-instagram"></i></a> <a href="#"><i
+							class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </body>
 </html>

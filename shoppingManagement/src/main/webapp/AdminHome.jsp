@@ -27,17 +27,17 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
 	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	crossorigin="anonymous"></script>
-	
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-<header>
-		
-			<div class="header">
-    				<h1> GOAL 24/7 </h1>
-			</div>
+	<header>
+
+		<div class="header">
+			<h1>GOAL 24/7</h1>
+		</div>
 	</header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"
 		style="padding-left: 50px; padding-right: 60px;">
@@ -51,10 +51,11 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="AdminHome.jsp">Home
-						<span class="sr-only">(current)</span>
+				<li class="nav-item active"><a class="nav-link"
+					href="AdminHome.jsp">Home <span class="sr-only">(current)</span>
 				</a></li>
-				<li class="nav-item"><a class="nav-link" href="AdminaddItem.jsp">Add Item</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="AdminaddItem.jsp">Add Item</a></li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="text" placeholder="Search"
@@ -80,9 +81,11 @@
 					<div class="row mb-2">
 						<div class="col-lg-12 col-sm-12 col-12 text-right">
 							<button type="button" class="btn btn-success"
-								onclick="window.location.href='AdminaddItem.jsp'">+ Add New</button>
-							<button type="button" onclick="window.location.href='AdminPrint.jsp'" class="btn btn-secondary">Generate
-								a report</button>
+								onclick="window.location.href='AdminaddItem.jsp'">+ Add
+								New</button>
+							<button type="button"
+								onclick="window.location.href='AdminPrint.jsp'"
+								class="btn btn-secondary">Generate a report</button>
 						</div>
 					</div>
 				</div>
@@ -119,46 +122,48 @@
 			</div>
 		</div>
 	</div>
-	
-	  <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>Sitesoch</h4>
-  	 			<ul>
-  	 				<li><a href="#">Home</a></li>
-  	 				<li><a href="#">About</a></li>
-  	 				<li><a href="#">Pricing</a></li>
-  	 				<li><a href="#">Privacy Policy</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Get Help</h4>
-  	 			<ul>
-  	 				<li><a href="#">Shipping</a></li>
-  	 				<li><a href="#">Returns</a></li>
-  	 				<li><a href="#">Order Status</a></li>
-  	 				<li><a href="#">Payment Options</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Address</h4>
-  	 			<ul>
-  	 				<li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci quia ab omnis id ipsum quae inventore </a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-google"></i></a>
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Sitesoch</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Get Help</h4>
+					<ul>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Payment Options</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Address</h4>
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Cupiditate adipisci quia ab omnis id ipsum
+								quae inventore </a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-google"></i></a> <a href="#"><i
+							class="fab fa-facebook-f"></i></a> <a href="#"><i
+							class="fab fa-instagram"></i></a> <a href="#"><i
+							class="fab fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script>
 
@@ -170,19 +175,17 @@
 		
 		const container = document.getElementById('content');
 		
-		<%
-		GetItems getItem = new GetItems();
-		ResultSet rs = getItem.getDetails();
-		
-		while (rs.next()) {
-		
-			String name = rs.getString("itemName");
-			int id = rs.getInt("id");
-			String code = rs.getString("itemCode");
-			String des = rs.getString("itemDescription");
-			String price = rs.getString("price");
-			String path = request.getContextPath();
-			%>
+		<%GetItems getItem = new GetItems();
+ResultSet rs = getItem.getDetails();
+
+while (rs.next()) {
+
+	String name = rs.getString("itemName");
+	int id = rs.getInt("id");
+	String code = rs.getString("itemCode");
+	String des = rs.getString("itemDescription");
+	String price = rs.getString("price");
+	String path = request.getContextPath();%>
 
 			var main = document.createElement("div");
 			main.className = "row p-2 bg-white border rounded";
@@ -294,14 +297,12 @@
 				const frm = document.getElementById("form");
 				const inpt = document.getElementById("input");
 				frm.setAttribute("action", "<%=path%>" + "/manage");
-				inpt.setAttribute("value","<%=id%>");
+				inpt.setAttribute("value","<%=id%>
+		");
 
 			};
-	<%
-	}
-	%>
-
-	}
+	<%}%>
+		}
 	</script>
 
 </body>
