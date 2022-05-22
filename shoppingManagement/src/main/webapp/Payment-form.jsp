@@ -27,9 +27,6 @@
 <link rel="stylesheet" type="text/css" href="CSS/InsertForm.css">
 
 
-
-
-
 </head>
 <body>
 
@@ -103,7 +100,6 @@
 								name="date" required="required">
 						</fieldset>
 
-
 						<button type="submit" class="btn btn-info">ADD</button>
 						<button type="reset" class="btn btn-info">CANCEL</button>
 						</form>
@@ -114,4 +110,3 @@
 	</div>
 </body>
 </html>
->
