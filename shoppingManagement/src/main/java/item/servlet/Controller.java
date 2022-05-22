@@ -67,14 +67,14 @@ public class Controller extends HttpServlet {
 				e.printStackTrace();
 			}
 			
-			response.sendRedirect("AdminHome.jsp");
+			response.sendRedirect("AdminHome.jsp?v=added");
 		}
 		
 		else if(request.getParameter("delete") != null) {
 			try {
 				int ids = Integer.parseInt(request.getParameter("id"));
 				deleteItem.deleteItem(ids);
-				response.sendRedirect("AdminHome.jsp");
+				response.sendRedirect("AdminHome.jsp?v=deleted");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -112,7 +112,7 @@ public class Controller extends HttpServlet {
 			
 			try {
 				updateItem.updateDetails(item, id);
-				response.sendRedirect("AdminHome.jsp");
+				response.sendRedirect("AdminHome.jsp?v=Updated");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
